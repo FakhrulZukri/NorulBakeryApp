@@ -1,0 +1,58 @@
+package com.example.norulcookies.data;
+
+import android.content.ContentResolver;
+import android.net.Uri;
+import android.provider.BaseColumns;
+
+public class FoodContract {
+
+    private FoodContract() {}
+
+    public static final String CONTENT_AUTHORITY = "com.example.norulcookies";
+
+    public static final Uri BASE_CONTENT_URI = Uri.parse("content://" + CONTENT_AUTHORITY);
+
+    public static final String PATH_FOOD = "food-path";
+
+    public static final String PATH_CART = "cart-path";
+
+    public static final class FoodEntry implements BaseColumns {
+
+        public static final Uri CONTENT_URI = Uri.withAppendedPath(BASE_CONTENT_URI, PATH_FOOD);
+
+        public static final Uri CONTENT_URI_CART = Uri.withAppendedPath(BASE_CONTENT_URI, PATH_CART);
+
+        public static final String CONTENT_LIST_TYPE =
+                ContentResolver.CURSOR_DIR_BASE_TYPE + "/" + CONTENT_AUTHORITY + "/" + PATH_FOOD;
+
+        public static final String CONTENT_ITEM_TYPE =
+                ContentResolver.CURSOR_ITEM_BASE_TYPE + "/" + CONTENT_AUTHORITY + "/" + PATH_FOOD;
+
+        public final static String TABLE_NAME = "foods";
+
+        public final static String CART_TABLE = "cart";
+
+        public final static String _ID = BaseColumns._ID;
+
+        public final static String _CARTID = BaseColumns._ID;
+
+
+        public final static String COLUMN_NAME = "foodName";
+
+        public final static String COLUMN_DESCRIPTION = "description";
+
+        public final static String COLUMN_IMAGE = "image";
+
+        public final static String COLUMN_PRICE = "price";
+
+
+
+        public final static String COLUMN_CART_NAME = "cartfoodName";
+
+        public final static String COLUMN_CART_IMAGE = "cartimage";
+
+        public final static String COLUMN_CART_QUANTITY = "cartquantity";
+
+        public final static String COLUMN_CART_TOTAL_PRICE = "carttotalprice";
+    }
+}
