@@ -1,0 +1,28 @@
+{
+  "foods": [
+    {
+      "foodName" : "Tart Nenas",
+      "description" : "Small, bite-size pastries filled or topped with pineapple jam",
+      "image" : "tartnenas.jpg",
+      "price" : 25.00
+    },
+    {
+      "foodName" : "Almond London",
+      "description" : "Sphere biscuit enveloped by chocolate layer, topped with small, crushed peanut",
+      "image" : "almondlondon.jpg",
+      "price" : 25.00
+    },
+    {
+      "foodName" : "Semperit",
+      "description" : "Cookie made with wheat flour, corn flour, custard powder, sugar and magarine",
+      "image" : "semperit.jpg",
+      "price" : 25.00
+    },
+    {
+      "foodName" : "Fruit Puff",
+      "description" : "Puff topped with fresh and tropical fruit with tiny size",
+      "image" : "tartnenas.jpg",
+      "price" : 30.00
+    }
+  ]
+}

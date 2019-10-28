@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:layout_width="match_parent" android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/cartImage"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:layout_margin="16dp"
+        android:gravity="center"
+        android:textColor="@android:color/holo_orange_light"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/foodName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:textSize="20sp"
+        android:textAppearance="?android:textAppearanceLarge"
+        android:layout_toRightOf="@+id/cartImage"
+        android:layout_marginTop="20dip"
+        tools:text="Food Name"
+        />
+    <TextView
+        android:id="@+id/foodQuantity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:textSize="20sp"
+        android:layout_toRightOf="@+id/cartImage"
+        android:layout_marginTop="20dip"
+        tools:text="Qunatity"
+        />
+    <TextView
+        android:id="@+id/foodPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:textSize="20sp"
+        android:layout_toRightOf="@+id/cartImage"
+        android:layout_marginTop="20dip"
+        tools:text="PRICE"
+        />
+
+
+</RelativeLayout>
