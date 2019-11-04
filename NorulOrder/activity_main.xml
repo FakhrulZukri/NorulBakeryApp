@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.example.norulorder.MainActivity">
+
+    <LinearLayout
+
+        android:orientation="vertical"
+        android:id="@+id/activity"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <EditText
+            android:id="@+id/Enter_your_name"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:hint="Enter_your_name"
+            android:inputType="textCapWords"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:id="@+id/biscuit"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="Biscuit"
+            android:textAllCaps="true"
+            android:textSize="20sp"/>
+
+        <CheckBox
+            android:id="@+id/dark_choco"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="dark_chocolate"
+            android:textSize="20sp"
+            android:padding="10dp"
+            android:onClick="choco"
+            android:checked="false"
+            />
+
+        <CheckBox
+            android:id="@+id/butter_cookie"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="butter_cookie"
+            android:textSize="20sp"
+            android:padding="10dp"
+            android:onClick="butter"
+            android:checked="false"
+
+            />
+
+
+
+        <TextView
+            android:id="@+id/quantity"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="quantity"
+            android:textAllCaps="true"
+            android:textSize="20sp"
+
+            />
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="7dp"
+            >
+
+            <Button
+                android:id="@+id/decrement"
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="-"
+                android:textSize="20sp"
+                android:onClick="decrementquantity"
+
+            />
+
+            <TextView
+                android:id="@+id/quantitychange_value"
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="quantitychange_value"
+                android:textSize="20sp"
+                android:layout_marginLeft="10dp"
+                android:textAllCaps="true"
+                />
+
+            <Button
+                android:id="@+id/increment"
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="+"
+                android:textSize="20sp"
+                android:onClick="incrementquantity"
+
+                />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/order_summary"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="order_summary"
+        android:textAllCaps="true"
+        android:textSize="20sp"
+        />
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="7dp"
+        >
+
+            <TextView
+                android:id="@+id/Total_Expense"
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Total_Expense"
+                android:textAllCaps="true"
+                android:textSize="20sp"
+                />
+
+            <TextView
+                android:id="@+id/One_coffee_rate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:text="one_coffee_rate"
+                android:textAllCaps="true"
+                android:textSize="20sp"
+                />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/Text3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PRICES OF FLAVOUR"
+            android:textSize="20sp"
+            />
+
+        <Button
+            android:id="@+id/ORDER"
+            android:layout_marginTop="10dp"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ORDER"
+            android:textAllCaps="true"
+            android:textSize="20sp"
+            android:onClick="OrderButton">
+
+        </Button>
+
+    </LinearLayout>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Enter_your_name : "
+        />
+
+
+</ScrollView>
